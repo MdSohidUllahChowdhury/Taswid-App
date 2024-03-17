@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print, sort_child_properties_last, avoid_unnecessary_containers
 
+
 import 'package:flutter/material.dart';
+
 
 class UI extends StatefulWidget {
   const UI({super.key});
@@ -47,18 +49,21 @@ backgroundColor: const Color.fromARGB(223, 0, 150, 135),
                 ),
               ),
               SizedBox(width: 8,),
-              Container(
-                margin: EdgeInsets.only(top: 8),
-                height: 150,
-                width: 140,
-                //color: Colors.yellowAccent,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.yellowAccent,
-                  image:
-                   DecorationImage(
-                    fit: BoxFit.cover,
-                    image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-tgOzMnw_d6Ssbcwm1-G_xjPS2pD_bdqSIw&usqp=CAU'))
+              Expanded(
+                child: Container(
+                  margin: EdgeInsets.only(top: 8,right: 5),
+                  height: 150,
+                  width: 140,
+                  
+                  //color: Colors.yellowAccent,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.yellowAccent,
+                    image:
+                     DecorationImage(
+                      fit: BoxFit.cover,
+                      image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-tgOzMnw_d6Ssbcwm1-G_xjPS2pD_bdqSIw&usqp=CAU'))
+                  ),
                 ),
               ),
             ],
@@ -94,16 +99,19 @@ backgroundColor: const Color.fromARGB(223, 0, 150, 135),
                 ),
               ),
               SizedBox(width: 8,),
-              Container(
-                height: 150,
-                width: 140,
-                //color: Colors.redAccent,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  color: Colors.red,
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr0ip7dj2YmWwTRv5_My13iEnzPTzJdxme8A&usqp=CAU'))
+              Expanded(
+                child: Container(
+                  margin: EdgeInsets.only(right: 5),
+                  height: 150,
+                  width: 140,
+                  //color: Colors.redAccent,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.red,
+                    image: DecorationImage(
+                      fit: BoxFit.cover,
+                      image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr0ip7dj2YmWwTRv5_My13iEnzPTzJdxme8A&usqp=CAU'))
+                  ),
                 ),
               ),
           ],
