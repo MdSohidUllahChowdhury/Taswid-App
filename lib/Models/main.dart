@@ -7,8 +7,8 @@ void main() {
   runApp((ScreenUtilInit(
     designSize: const Size(360, 640),
     child: GetMaterialApp(
-      theme: ThemeData(fontFamily: 'Kenia'),
-      home: const OpenPage(),
+      theme: ThemeData(fontFamily: 'Lato'),
+      home: OpenPage(),
       debugShowCheckedModeBanner: false,
     ),
   )));

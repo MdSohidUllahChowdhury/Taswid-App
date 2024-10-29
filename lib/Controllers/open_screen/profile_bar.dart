@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 Widget profileBar(){
   return Container(
@@ -7,19 +8,21 @@ Widget profileBar(){
             color: Color(0xFFf8f6f1),
             borderRadius: BorderRadius.all(Radius.circular(30))
           ),
-           child:const ListTile(
+           child: ListTile(
             trailing:  CircleAvatar(
-              backgroundColor: Color(0xFFaaa598),
-              radius:18,
-              child: Icon(Icons.notifications),
+              backgroundColor: const Color(0xFFaaa598),
+              radius:20,
+              child: IconButton(onPressed:() {
+                Get.back();
+              }, icon: const Icon(Icons.notifications)),
             ),
       
-            title: Text('Shaki Chowdhury'),
-            subtitle:Text('Top Level'),
+            title: const Text('Sohid Chowdhury'),
+            subtitle:const Text('Top Level',style: TextStyle(fontFamily: 'Kenia',fontSize: 12),),
             
-            leading: CircleAvatar(
+            leading: const CircleAvatar(
               backgroundImage:AssetImage('lib/Assets/images/pro.png') ,
-              radius:24,
+              radius:26,
             ),
            ),
          );

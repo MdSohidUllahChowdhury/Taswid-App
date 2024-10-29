@@ -30,3 +30,6 @@ flutter:
     - family: Kenia
       fonts:
         - asset: lib/Assets/fonts/Kenia-Regular.ttf
+    - family: Lato
+      fonts:
+        - asset: lib/Assets/fonts/Lato-Black.ttf
