@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:for_practice/Models/Quots%20Model/model.dart';
+import 'package:for_practice/Controllers/quots_model/model.dart';
 
-List<QutosModel> qutesMap = [
+List<QutosModel> quotsMap = [
   QutosModel(
       writerName: '– Ralph Waldo Emerson',
       theQuot:

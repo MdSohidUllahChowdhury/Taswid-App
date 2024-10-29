@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:for_practice/Controllers/open_screen/writer_card.dart';
+import 'package:for_practice/Controllers/widgets_controller/open_screen/writer_card.dart';
 
 class Utils {
   static seeMore(String name, IconData iconName, void Function()? path) {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-Widget profileBar() {
+Widget profileBar(IconData icon) {
   return Container(
     margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 22),
     decoration: const BoxDecoration(
@@ -15,7 +15,7 @@ Widget profileBar() {
             onPressed: () {
               Get.back();
             },
-            icon: const Icon(Icons.notifications)),
+            icon: Icon(icon)),
       ),
       title: const Text('Sohid Chowdhury'),
       subtitle: const Text(
