@@ -8,20 +8,27 @@ Widget wirterCard(String profilePic, String writerName, Color bgColor) {
         color: bgColor,
         borderRadius: const BorderRadius.all(Radius.circular(30))),
     child: ListTile(
-      trailing:  CircleAvatar(
-        backgroundColor: const Color(0xFFaaa598),
-        radius: 20,
-        child:IconButton(onPressed: (){
-          Get.snackbar('Love❤️', 'You Just Love Writer',snackPosition: SnackPosition.BOTTOM,);
-        }, icon:const Icon(Icons.favorite_outline))
-      ),
+      trailing: CircleAvatar(
+          backgroundColor: const Color(0xFFaaa598),
+          radius: 20,
+          child: IconButton(
+              onPressed: () {
+                Get.snackbar(
+                  'Love❤️',
+                  'You Just Love Writer',
+                  snackPosition: SnackPosition.BOTTOM,
+                );
+              },
+              icon: const Icon(Icons.favorite_outline))),
       title: Text(writerName),
-      titleTextStyle:const TextStyle(fontSize: 15,),
+      titleTextStyle: const TextStyle(
+        fontSize: 15,
+      ),
       subtitle: const Text('Top Level'),
-      subtitleTextStyle:const TextStyle(fontSize: 10,fontFamily: 'Kenia'),
+      subtitleTextStyle: const TextStyle(fontSize: 10, fontFamily: 'Kenia'),
       leading: CircleAvatar(
         backgroundImage: AssetImage(profilePic),
-        radius:26,
+        radius: 26,
       ),
     ),
   );

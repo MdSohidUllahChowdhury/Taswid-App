@@ -5,7 +5,7 @@ import 'package:for_practice/Models/Quots%20Model/qutos_list.dart';
 
 class QuotsDatails extends StatelessWidget {
   QuotsDatails({super.key});
- final listDataCalling = qutesMap;
+  final listDataCalling = qutesMap;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,14 +15,12 @@ class QuotsDatails extends StatelessWidget {
           Expanded(
             child: ListView.builder(
               itemCount: listDataCalling.length,
-              itemBuilder:(context, index) {
-               final data = listDataCalling[index];
-               return quotsCard(
-                context, 
-                data.cardBgColor, 
-                data.writerName,
-                data.theQuot);
-              }, ),
+              itemBuilder: (context, index) {
+                final data = listDataCalling[index];
+                return quotsCard(
+                    context, data.cardBgColor, data.writerName, data.theQuot);
+              },
+            ),
           )
         ],
       ),

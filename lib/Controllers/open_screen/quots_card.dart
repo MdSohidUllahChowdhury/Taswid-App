@@ -7,27 +7,27 @@ Widget quotsCard(
   String quot,
 ) {
   return Container(
-    margin: const EdgeInsets.only(left: 8, right: 4,bottom: 6),
+    margin: const EdgeInsets.only(left: 8, right: 4, bottom: 6),
     padding: const EdgeInsets.symmetric(horizontal: 4),
     height: MediaQuery.sizeOf(context).height * .30,
     width: MediaQuery.sizeOf(context).width * .80,
     decoration: BoxDecoration(
         color: cardColor,
         borderRadius: const BorderRadius.all(Radius.circular(26))),
-    child:  Column(
+    child: Column(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           name,
-          style:const TextStyle(
+          style: const TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.bold,
           ),
         ),
         Text(
           quot,
-          style:const TextStyle(
+          style: const TextStyle(
             fontSize: 14,
             fontFamily: 'Kenia',
             fontWeight: FontWeight.bold,

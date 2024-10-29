@@ -19,31 +19,29 @@ class OpenPage extends StatelessWidget {
         children: [
           profileBar(),
           Utils.seeMore(
-            '  Popluer Quots', 
-            Icons.arrow_drop_down_circle_outlined,(){
-              Get.to(()=>QuotsDatails());
-            },),
+            '  Popluer Quots',
+            Icons.arrow_drop_down_circle_outlined,
+            () {
+              Get.to(() => QuotsDatails());
+            },
+          ),
           Expanded(
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: dataCalling.length,
-              itemBuilder:(context, index) {
-               final data = dataCalling[index];
+              itemBuilder: (context, index) {
+                final data = dataCalling[index];
                 return quotsCard(
-                  context, 
-                  data.cardBgColor, 
-                  data.writerName, 
-                  data.theQuot
-                  );
+                    context, data.cardBgColor, data.writerName, data.theQuot);
               },
-              ),
+            ),
           ),
           Utils.seeMore(
-              '  Recent Uploades', 
-              Icons.keyboard_double_arrow_right_rounded,(){},),
-              
+            '  Recent Uploades',
+            Icons.keyboard_double_arrow_right_rounded,
+            () {},
+          ),
           Utils.listOFWriter()
-          
         ],
       ),
     );

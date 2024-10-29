@@ -11,7 +11,7 @@ class Utils {
           style: const TextStyle(color: Colors.white, fontSize: 20),
         ),
         IconButton(
-            onPressed:path,
+            onPressed: path,
             icon: Icon(
               iconName,
               color: Colors.white,
